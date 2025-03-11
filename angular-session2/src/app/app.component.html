@@ -1,0 +1,19 @@
+<div class="holder" style="display: flex; gap: 7px; justify-content: center; padding-top: 21px;">
+  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 10px;">
+    <app-child-1 [name]="name" [age]="age" (increaseAge)="getAge($event)"></app-child-1>
+  </div>
+  <div
+    style="border: 1px solid #ddd; border-radius: 8px; padding: 10px; display: flex;flex-direction: column;justify-content: space-between;">
+    <h2>Parent</h2>
+    <input type="text" [(ngModel)]="name" name="name"
+      style="display: block;margin-top: 16px;padding: 10px; text-align: center; border: 1px solid #eee;outline: none;">
+    <br>
+    <br>
+    <br>
+    <p style="margin: 20px 0 0;padding: 14px; text-align: center; border: 1px solid #ddd; background-color: #ddd;border-radius: 5px;">{{age}}</p>
+  </div>
+  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 10px;">
+    <app-child-2 [name]="name" [age]="age" (DecreaseAge)="getAge($event)"></app-child-2>
+  </div>
+
+</div>

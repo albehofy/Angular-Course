@@ -1,0 +1,11 @@
+.holder > div{
+    flex-grow: 1;
+    padding: 14px;
+}
+
+div h2 {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    text-transform: capitalize;
+    padding: 10px;
+}
