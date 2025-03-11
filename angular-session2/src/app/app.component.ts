@@ -12,6 +12,12 @@ export class AppComponent {
   name  = 'Angular';
   age = 25; 
   getAge(age:number){
-    this.age = age;
+    if(age > 0 && age <= 100){
+      this.age = age;
+    }else if(age < 1){
+      alert("Age can't be negative");
+    }else if(age > 100){
+      alert("Age can't be greater than 100");
+    }
   }
 }
